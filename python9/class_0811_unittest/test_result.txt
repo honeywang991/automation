@@ -1,0 +1,27 @@
+test_add_one_arg (class_0811_unittest.test_math_method.TestMathMethod) ... ERROR
+test_add_two_float (class_0811_unittest.test_math_method.TestMathMethod) ... FAIL
+test_add_two_negative (class_0811_unittest.test_math_method.TestMathMethod) ... ok
+test_add_two_positive (class_0811_unittest.test_math_method.TestMathMethod) ... ok
+
+======================================================================
+ERROR: test_add_one_arg (class_0811_unittest.test_math_method.TestMathMethod)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\wf\python9\class_0811_unittest\test_math_method.py", line 42, in test_add_one_arg
+    result=MathMethod().add(0.2)
+TypeError: add() missing 1 required positional argument: 'b'
+
+======================================================================
+FAIL: test_add_two_float (class_0811_unittest.test_math_method.TestMathMethod)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\wf\python9\class_0811_unittest\test_math_method.py", line 37, in test_add_two_float
+    raise e #抛出错误
+  File "D:\wf\python9\class_0811_unittest\test_math_method.py", line 33, in test_add_two_float
+    self.assertEqual(0.3, result)
+AssertionError: 0.3 != 0.30000000000000004
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.003s
+
+FAILED (failures=1, errors=1)

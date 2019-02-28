@@ -1,0 +1,18 @@
+unittest 框架模板
+C:\Users\Administrator\Desktop\gitwork\python9\class_0816\class_0811_work
+C:\Users\Administrator\Desktop\gitwork\python9\class_0811_homework
+
+接口测试
+C:\Users\Administrator\Desktop\gitwork\python9\class_0818_request
+run是运行的时候，负责执行的脚本
+http_request.py是 封装了post get 为了测试接口
+test_http_request.py是测试接口的用例  比如 登陆 登陆错误 正确 test_right  test_wrong
+读取配置数据
+C:\Users\Administrator\Desktop\gitwork\python9\class_0818_request
+读取txt配置数据
+C:\Users\Administrator\Desktop\gitwork\python9\class_0811_homework
+
+=====================
+第36节 DDT框架原理以及使用（一）2019-02-19
+
+python之Excel读写测试数据(一)

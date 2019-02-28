@@ -1,0 +1,16 @@
+#file文件的处理 --->
+#上节课题目的讲解&单元测试的回顾
+#模块引入 放到lib与不放到lib有啥区别
+#如果放在Lib下面，可以直接import
+
+#如何完成单元测试？？
+
+#request模块  它可以完成http请求  get请求 和post请求
+镜像源 安装 pip install requests -i https://doubai....
+地址：
+#参数
+#如何完成单元测试？？
+#测试数据存储到Excel里面
+
+
+#python之Excel读写测试数据(一) 第30课
