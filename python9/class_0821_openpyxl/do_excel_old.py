@@ -2,24 +2,24 @@
 from openpyxl import load_workbook
 
 #打开工作薄  定位表单
-wb = load_workbook('python9.xlsx')
+wb = load_workbook('testdata.xlsx')
 sheet = wb['python9']
 
 #获取值
 
 #第一个小题目：把第一行的数据  全部获取出来存到一个列表里面
 #方法一  ： 一个一个的去读
-# test_data = []
-# test_data.append(sheet.cell(1,1).value)
-# test_data.append(sheet.cell(1,2).value)
-# test_data.append(sheet.cell(1,3).value)
-# test_data.append(sheet.cell(1,4).value)
-# test_data.append(sheet.cell(1,5).value)
-# print(test_data)
+# my_test_data = []
+# my_test_data.append(sheet.cell(1,1).value)
+# my_test_data.append(sheet.cell(1,2).value)
+# my_test_data.append(sheet.cell(1,3).value)
+# my_test_data.append(sheet.cell(1,4).value)
+# my_test_data.append(sheet.cell(1,5).value)
+# print(my_test_data)
 
 #
 # #方法二： 控制列表循环  利用for循环
-# test_data = []
+# my_test_data = []
 # #经过方法一  我们观察到  列是变化的 1 2 3  4 5
 # #rang(1,6)  可以生成 1 2 3 4 5
 #
@@ -28,8 +28,8 @@ sheet = wb['python9']
 #
 #
 # for i in range(1,sheet.max_column+1):
-#     test_data.append(sheet.cell(1,i).value)
-# print(test_data)
+#     my_test_data.append(sheet.cell(1,i).value)
+# print(my_test_data)
 #
 # print('==================')
 #

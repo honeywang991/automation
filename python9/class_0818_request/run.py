@@ -10,7 +10,7 @@ suite = unittest.TestSuite()
 #参数化在这里完成
 test_data = ReadData().read_data()
 for item in test_data:
-# test_data = [
+# my_test_data = [
 # {"url":"https://www.baidu.com",
 #  "request_data":"{'name':'honey','pw':'123'}",
 #  'method':'post'},]

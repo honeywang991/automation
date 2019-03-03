@@ -3,7 +3,7 @@
 class ReadData:
     def read_data(self):
         #打开文件
-        file = open("test_data.txt","r",encoding='utf-8')
+        file = open("my_test_data.txt","r",encoding='utf-8')
         result = file.readlines() #返回列表形式的数据，每行作为一个元素
         # print(result) #调试，看下打印出来的数据
         # print(result[0]) # 首先处理第一行数据  然后加for循环处理多行数据

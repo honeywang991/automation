@@ -2,7 +2,7 @@
 #单元测试 其实就是测试自己的代码
 #代码一般都是类-->函数  组成的？ 最终目标就是函数
 #我们为什么要做单位测试 检查自己的代码
-#unit test 我们的目标是为了实现自动化测试
+#unit test.txt 我们的目标是为了实现自动化测试
 #期望值 == 实际值 PASS
 #期望值 != 实际值 FAIL
 
@@ -61,13 +61,13 @@ import unittest
 #     fp = file('my_report.html', 'wb')
 #     runner = HTMLTestRunner.HTMLTestRunner(
 #                 stream=fp,
-#                 title='My unit test',
+#                 title='My unit test.txt',
 #                 description='This demonstrates the report output by HTMLTestRunner.'
 #                 )
 #     # Use an external stylesheet.
 #     # See the Template_mixin class for more customizable options
 #     runner.STYLESHEET_TMPL = '<link rel="stylesheet" href="my_stylesheet.css" type="text/css">'
-#     # run the test
+#     # run the test.txt
 #     runner.run(my_test_suite)
 # ------------------------------------------------------------------------
 # Copyright (c) 2004-2007, Wai Yip Tung
@@ -116,7 +116,7 @@ import unittest
 # * Show output inline instead of popup window (Viorel Lupu).
 # Version in 0.8.1
 # * Validated XHTML (Wolfgang Borgert).
-# * Added description of test classes and test cases.
+# * Added description of test.txt classes and test.txt cases.
 # Version in 0.8.0
 # * Define Template_mixin class for customization.
 # * Workaround a IE 6 bug that it does not treat <script> block as CDATA.
@@ -488,8 +488,8 @@ import unittest
 #         self.passrate=float(0)
 #
 #
-#     def startTest(self, test):
-#         TestResult.startTest(self, test)
+#     def startTest(self, test.txt):
+#         TestResult.startTest(self, test.txt)
 #         # just one buffer for both stdout and stderr
 #         self.outputBuffer = io.StringIO()
 #         stdout_redirector.fp = self.outputBuffer
@@ -513,47 +513,47 @@ import unittest
 #         return self.outputBuffer.getvalue()
 #
 #
-#     def stopTest(self, test):
+#     def stopTest(self, test.txt):
 #         # Usually one of addSuccess, addError or addFailure would have been called.
 #         # But there are some path in unittest that would bypass this.
 #         # We must disconnect stdout in stopTest(), which is guaranteed to be called.
 #         self.complete_output()
 #
 #
-#     def addSuccess(self, test):
+#     def addSuccess(self, test.txt):
 #         self.success_count += 1
-#         TestResult.addSuccess(self, test)
+#         TestResult.addSuccess(self, test.txt)
 #         output = self.complete_output()
-#         self.result.append((0, test, output, ''))
+#         self.result.append((0, test.txt, output, ''))
 #         if self.verbosity > 1:
 #             sys.stderr.write('ok ')
-#             sys.stderr.write(str(test))
+#             sys.stderr.write(str(test.txt))
 #             sys.stderr.write('\n')
 #         else:
 #             sys.stderr.write('.')
 #
-#     def addError(self, test, err):
+#     def addError(self, test.txt, err):
 #         self.error_count += 1
-#         TestResult.addError(self, test, err)
+#         TestResult.addError(self, test.txt, err)
 #         _, _exc_str = self.errors[-1]
 #         output = self.complete_output()
-#         self.result.append((2, test, output, _exc_str))
+#         self.result.append((2, test.txt, output, _exc_str))
 #         if self.verbosity > 1:
 #             sys.stderr.write('E  ')
-#             sys.stderr.write(str(test))
+#             sys.stderr.write(str(test.txt))
 #             sys.stderr.write('\n')
 #         else:
 #             sys.stderr.write('E')
 #
-#     def addFailure(self, test, err):
+#     def addFailure(self, test.txt, err):
 #         self.failure_count += 1
-#         TestResult.addFailure(self, test, err)
+#         TestResult.addFailure(self, test.txt, err)
 #         _, _exc_str = self.failures[-1]
 #         output = self.complete_output()
-#         self.result.append((1, test, output, _exc_str))
+#         self.result.append((1, test.txt, output, _exc_str))
 #         if self.verbosity > 1:
 #             sys.stderr.write('F  ')
-#             sys.stderr.write(str(test))
+#             sys.stderr.write(str(test.txt))
 #             sys.stderr.write('\n')
 #         else:
 #             sys.stderr.write('F')
@@ -581,12 +581,12 @@ import unittest
 #         self.startTime = datetime.datetime.now()
 #
 #
-#     def run(self, test):
-#         "Run the given test case or test suite."
+#     def run(self, test.txt):
+#         "Run the given test.txt case or test.txt suite."
 #         result = _TestResult(self.verbosity)
-#         test(result)
+#         test.txt(result)
 #         self.stopTime = datetime.datetime.now()
-#         self.generateReport(test, result)
+#         self.generateReport(test.txt, result)
 #         print('\nTime Elapsed: %s' % (self.stopTime-self.startTime), file=sys.stderr)
 #         return result
 #
@@ -631,7 +631,7 @@ import unittest
 #         ]
 #
 #
-#     def generateReport(self, test, result):
+#     def generateReport(self, test.txt, result):
 #         report_attrs = self.getReportAttributes(result)
 #         generator = 'HTMLTestRunner %s' % __version__
 #         stylesheet = self._generate_stylesheet()
@@ -766,16 +766,16 @@ import unittest
 # # Facilities for running tests from the command line
 # ##############################################################################
 #
-# # Note: Reuse unittest.TestProgram to launch test. In the future we may
+# # Note: Reuse unittest.TestProgram to launch test.txt. In the future we may
 # # build our own launcher to support more specific command line
-# # parameters like test title, CSS, etc.
+# # parameters like test.txt title, CSS, etc.
 # class TestProgram(unittest.TestProgram):
 #     """
 #     A variation of the unittest.TestProgram. Please refer to the base
 #     class for command line parameters.
 #     """
 #     def runTests(self):
-#         # Pick HTMLTestRunner as the default test runner.
+#         # Pick HTMLTestRunner as the default test.txt runner.
 #         # base class's testRunner parameter is not useful because it means
 #         # we have to instantiate HTMLTestRunner before we know self.verbosity.
 #         if self.testRunner is None:
