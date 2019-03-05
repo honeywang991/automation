@@ -7,7 +7,7 @@ conf_path = os.path.join(os.path.split(os.path.realpath(__file__))[0],'pro.conf'
 pro_path=ReadConfig().read_config(conf_path,'PRO_PATH','pro_path')
 
 
-test_data_path=os.path.join(pro_path,'test_num_data','testdata.xlsx')
+test_data_path=os.path.join(pro_path,'test_data','testdata.xlsx')
 print(test_data_path)
 
 report_path=os.path.join(pro_path,'test_result','test_report111.html')

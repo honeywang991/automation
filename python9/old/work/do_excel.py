@@ -16,34 +16,32 @@ class DoExcel:
         return title
 
 
-    def do_excel(self,mode,case_id_list):
+    def do_excel(self):
         #打开工作薄  定位表单
         wb = load_workbook(self.file_name)
         sheet = wb[self.sheet_name]
+
         #获取title
         title = self.get_title()
-        test_data = []#大列表
+
+        all_data = []#大列表
         for j in range (2,sheet.max_row+1):#控制行
-            row_data = {}  # 每一行数据存到一个字典里面
+            row_data = {}#每一行数据存到一个字典里面
             for i in range(1,sheet.max_column+1):#控制列
                 # key = title[i-1]#i=1 是第一列 对应title里面的0    i-1
                 # value = sheet.cell(j,i).value
                 row_data[title[i-1]]=sheet.cell(j,i).value
-            test_data.append(row_data)
-            if mode=='1':#如果等于1 就跑所有的用例
-                final_data=test_data
-            else:#否则就执行case_id_list里面的用例
-                final_data = []
-                for item in test_data:#对所有的数据进行遍历
-                    if item['case_id'] in eval(case_id_list):#去判断case_id是否相等
-                        final_data.append(item)#如果相等的话，那么就把他加入到final_data的列表里面
-
-        return final_data #返回最终的数据
-        # return test_data
+            all_data.append(row_data)
+        # print(all_data)
+        return all_data
+        # all_data = []
+        # for j in range (1,sheet.max_row+1):#控制行
+        #     row_data = []
+        #     for i in range(1,sheet.max_column+1):#控制列
+        #         row_data.append(sheet.cell(j,i).value)
+        #     all_data.append(row_data)
+        # print(all_data)
 if __name__ == '__main__':
-    # from conf import read_path
-    path=r'C:\Users\Administrator\Desktop\automation\python9\work2\test_data\testdata.xlsx'
-    res=DoExcel(path,'test_data_1').do_excel()
+    res=DoExcel('testdata.xlsx','test_data_1').do_excel()
     print(res)
-#read_path.test_data_path
-#,mode,case_id_list
+
