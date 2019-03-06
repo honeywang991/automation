@@ -1,5 +1,5 @@
 import unittest
-from work2.common.http_request import HttpRequest
+from common.http_request import HttpRequest
 class RequestMethod(unittest.TestCase):
     def __init__(self,methodName,url,request_data,method,expected):
         super(RequestMethod,self).__init__(methodName)

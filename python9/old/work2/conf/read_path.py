@@ -1,5 +1,5 @@
 import os
-from work2.common.read_config import ReadConfig
+from common.read_config import ReadConfig
 
 
 conf_path = os.path.join(os.path.split(os.path.realpath(__file__))[0],'pro.conf')
