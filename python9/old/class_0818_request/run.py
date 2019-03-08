@@ -2,7 +2,7 @@ import unittest
 import HTMLTestRunner
 from old.class_0818_request.read_data import ReadData
 from old.class_0818_request import TestHttpRequest
-# C:\Users\Administrator\Desktop\gitwork\python9\class_0818_request\test_http_request.py
+# C:\Users\Administrator\Desktop\gitwork\python9\class_0818_request\test_http_request1.py
 
 
 suite = unittest.TestSuite()

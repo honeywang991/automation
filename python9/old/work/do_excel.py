@@ -42,6 +42,6 @@ class DoExcel:
         #     all_data.append(row_data)
         # print(all_data)
 if __name__ == '__main__':
-    res=DoExcel('testdata.xlsx','test_data_1').do_excel()
+    res=DoExcel('t1.xlsx','test_data_1').do_excel()
     print(res)
 

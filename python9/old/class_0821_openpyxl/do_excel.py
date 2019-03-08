@@ -36,6 +36,6 @@ class DoExcel:
         return all_data
 
 if __name__ == '__main__':
-    res=DoExcel('testdata.xlsx','my_test_data').do_excel()
+    res=DoExcel('t1.xlsx','my_test_data').do_excel()
     print(res)
 

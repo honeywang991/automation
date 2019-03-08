@@ -2,13 +2,13 @@ import os
 from common.read_config import ReadConfig
 
 
-conf_path = os.path.join(os.path.split(os.path.realpath(__file__))[0],'pro.conf')
+conf_path = os.path.join(os.path.split(os.path.realpath(__file__))[0],'pro.conf1')
 
 pro_path=ReadConfig().read_config(conf_path,'PRO_PATH','pro_path')
 
 
-test_data_path=os.path.join(pro_path,'test_data','testdata.xlsx')
-print(test_data_path)
+test_data_path=os.path.join(pro_path,'test_data','t1.xlsx')
+# print(test_data_path)
 
 report_path=os.path.join(pro_path,'test_result','test_report111.html')
 

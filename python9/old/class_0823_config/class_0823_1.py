@@ -1,7 +1,7 @@
 #配置文件
 #引用数据文件 绝对路径
 #配置文件一般存放：共用的数据 或者经常变化的数据
-# .conf  .ini  .propeities
+# .conf1  .ini  .propeities
 
 import configparser
 #配置文件：片段 section 片段名一般都是大写       选项option      值values
@@ -28,5 +28,5 @@ class ReadConfig:
 #如果 要转换原本格式  请记得用eval()
 
 if __name__ == '__main__':
-    value=ReadConfig().read_config('lemon.conf','NAME','s_3')
+    value=ReadConfig().read_config('lemon.conf1','NAME','s_3')
     print(value)

@@ -4,7 +4,7 @@
 #单元测试  写测试用例 对不同的接口写测试用例？
 
 import unittest
-# C:\Users\Administrator\Desktop\gitwork\python9\class_0818_request\http_request.py
+# C:\Users\Administrator\Desktop\gitwork\python9\class_0818_request\http_request1.py
 from old.class_0818_request import HttpRequest
 class TestHttpRequest(unittest.TestCase):
     def __init__(self,methodName,url,request_data,method,expected):

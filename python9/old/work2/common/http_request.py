@@ -4,7 +4,7 @@ import requests
 #我们可以封装成函数
 #升级为类
 
-#写这个类的目的： 完成接口测试
+#写这个类的目的： 完成接口测试s
 class HttpRequest:
 
 
@@ -39,7 +39,7 @@ class HttpRequest:
         #有时间就可以去了解下装饰器
 
 if __name__ == '__main__':
-    run = HttpRequest()
+    run = HttpRequests()
     url = 'https://www.ketangpai.com/UserApi/login'
     request_data = {"email":"17718567797","password":"123456","remember":"0"}
     # method = 'post'

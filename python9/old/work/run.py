@@ -5,8 +5,8 @@ from old.work import DoExcel
 
 
 if __name__ == '__main__':
-    # file_name = r'C:\Users\Administrator\Desktop\automation\python9\work\my_test_data\testdata.xlsx'
-    test_data=DoExcel('testdata.xlsx','test_data_1').do_excel()
+    # file_name = r'C:\Users\Administrator\Desktop\automation\python9\work\my_test_data\t1.xlsx'
+    test_data=DoExcel('t1.xlsx','test_data_1').do_excel()
     suite = unittest.TestSuite()
     for item in test_data:
         suite.addTest(

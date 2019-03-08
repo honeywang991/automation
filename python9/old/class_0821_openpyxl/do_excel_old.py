@@ -2,7 +2,7 @@
 from openpyxl import load_workbook
 
 #打开工作薄  定位表单
-wb = load_workbook('testdata.xlsx')
+wb = load_workbook('t1.xlsx')
 sheet = wb['python9']
 
 #获取值

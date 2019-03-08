@@ -11,5 +11,5 @@ class ReadConfig:
 
 
 if __name__ == '__main__':
-    value=ReadConfig().read_config('pro.conf','PRO_PATH','pro_path')
+    value=ReadConfig().read_config('pro.conf1','PRO_PATH','pro_path')
     print(value)

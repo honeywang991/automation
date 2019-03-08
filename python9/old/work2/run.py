@@ -6,8 +6,8 @@ from conf import read_path
 from common.read_config import ReadConfig
 
 if __name__ == '__main__':
-    # excle_path = read_path.pro_path + r'\test_num_data\testdata.xlsx'
-    # file_name = r'C:\Users\Administrator\Desktop\automation\python9\auto_api\test_num_data\testdata.xlsx'
+    # excle_path = read_path.pro_path + r'\test_num_data\t1.xlsx'
+    # file_name = r'C:\Users\Administrator\Desktop\automation\python9\auto_api\test_num_data\t1.xlsx'
     mode=ReadConfig().read_config(read_path.conf_path,'MODE','mode')
     case_id_list=ReadConfig().read_config(read_path.conf_path,'MODE','case_id_list')
     test_data=DoExcel(read_path.test_data_path,'test_data_1').do_excel(mode,case_id_list)
@@ -23,5 +23,5 @@ if __name__ == '__main__':
         runner.run(suite)
 
 
-#C:\Users\Administrator\Desktop\automation\python9\auto_api\conf\pro.conf
+#C:\Users\Administrator\Desktop\automation\python9\auto_api\conf1\pro.conf1
 #如果conf中的mode 是1   则执行所有用例   ；  是0则执行case_id_list=[1，3]

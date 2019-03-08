@@ -16,7 +16,7 @@ from openpyxl import load_workbook
 
 #1:打开工作薄，必须是已经存在的工作薄
 #openpyxl 操作excel 必须是xlsx结尾   不能是xls，否则会报错
-wb=load_workbook('testdata.xlsx')  #大小写敏感
+wb=load_workbook('t1.xlsx')  #大小写敏感
 #坑一： 新建文件在windows桌面建好，粘贴进项目
 #新建excel不可以在pycharm中新建，在window文件夹中新建
 #或者 在桌面新建好，复制到pycharm中
@@ -33,7 +33,7 @@ print(sheet.cell(2,3).value)#读取数据
 sheet.cell(3,3).value='菜菜'#
 
 #如果有数据更新，那么就一定要记得保存文件
-wb.save('testdata.xlsx')
+wb.save('t1.xlsx')
 
 #坑二：
 #如果涉及到写入数据，那么就一定要关闭，Excel一定不能是打开状态？
