@@ -1,0 +1,91 @@
+
+
+git 命令     
+git clone  URL 
+cd 到工程目录下面   //进入到工程文件夹下
+git init  //初始化
+git add 123.txt  / git add .   //将所有文件添加到仓库
+git commit -m "添加代码"   //添加代码
+git remote add origin git@github.com:honeywang991/test01.git https://github.com/honeywang991/test01.git  //关联远程仓库，https就是仓库的地址
+git pull origin master //将文件推送到远程仓库
+git push -u origin master //如果报错--->
+ 
+需要执行拉去readme.md文件
+git pull --rebase origin master //将git仓库的readme.md文件拉到本地工程文件下
+git push -u origin master //推送到远程仓库
+
+
+https://www.cnblogs.com/chenlogin/p/6592228.html
+更新远程分支到本地
+
+//方法一
+$ git fetch origin master //从远程的origin仓库的master分支下载代码到本地的origin master
+
+$ git log -p master.. origin/master//比较本地的仓库和远程参考的区别
+
+$ git merge origin/master//把远程下载下来的代码合并到本地仓库，远程的和本地的合并
+  
+git如何新建分支
+1) 切换到基础分支，如主干
+
+git checkout master
+
+2）创建并切换到新分支
+
+git checkout -b panda
+
+git branch可以看到已经在panda分支上
+
+3)更新分支代码并提交
+
+git add *
+
+git commit -m "init panda"
+
+git push origin panda
+
+4)在git代码管理界面经可以看到panda分支了，成功~~
+
+
+1. 查看远程分支
+
+$ git branch -a
+2. 查看本地分支
+
+~/mxnet$ git branch
+* master
+3. 切换分支
+
+$ git checkout -b v0.9rc1 origin/v0.9rc1
+Branch v0.9rc1 set up to track remote branch v0.9rc1 from origin.
+Switched to a new branch 'v0.9rc1'
+
+＃已经切换到v0.9rc1分支了
+$ git branch
+  master
+* v0.9rc1
+
+＃切换回master分支
+$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+
+
+========================
+git init 
+
+创建本地 dev1.0 分支 
+
+git branch dev1.0
+
+查看本地分支:
+
+git branch
+
+
+
+切换分支:如切换到master
+
+ git checkout master
+ 
