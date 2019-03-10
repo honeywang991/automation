@@ -1,4 +1,6 @@
-
+op/automation/python9 (master)
+$ ssh-keygen -t rsa -C "17718567797@163.com"
+https://blog.csdn.net/hffygc/article/details/84021548
 
 git ÃüÁî     
 git clone  URL 
