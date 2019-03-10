@@ -39,11 +39,11 @@ class HttpRequest:
         #有时间就可以去了解下装饰器
 
 if __name__ == '__main__':
-    run = HttpRequests()
+    run = HttpRequest()
     url = 'https://www.ketangpai.com/UserApi/login'
     request_data = {"email":"17718567797","password":"123456","remember":"0"}
     # method = 'post'
-    run.http_request(url,request_data,'Post')
+    print(run.http_request(url,request_data,'Post'))
 
 
 
